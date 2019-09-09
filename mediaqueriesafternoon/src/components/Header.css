@@ -1,0 +1,91 @@
+header {
+  height: 90px;
+  background: transparent;
+  color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+.logo {
+  color: #fed136;
+  font-size: 1.75em;
+  font-family: "Kaushan Script";
+  font-style: italic;
+}
+header > div {
+  height: 100%;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  font-size: 90%;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+header nav ul {
+  min-width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+header > div button {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+@media screen and (max-width: 700px) {
+  header nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #212529;
+    min-height: 100vh;
+    transform: translate(300px, 0);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .show {
+    transform: translate(0, 0);
+  }
+
+  header nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 300px;
+    padding-top: 90px;
+    min-width: 300px;
+  }
+
+  header > div button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    background: #fed136;
+    border-radius: 50%;
+    z-index: 2;
+    display: initial;
+  }
+}

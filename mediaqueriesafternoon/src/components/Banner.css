@@ -1,0 +1,39 @@
+.banner-container {
+  min-height: 200vh;
+  text-align: center;
+  padding-top: 200px;
+  background-image: url("../header-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-size: 75px;
+  color: white;
+}
+
+h2 {
+  font-size: 40px;
+  color: #ffffff;
+  font-style: italic;
+}
+
+.banbut {
+  width: 220px;
+  height: 80px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #fed136;
+  color: white;
+  transition: 0.8;
+  cursor: pointer;
+  font-family: "Lacquer", sans-serif;
+  font-weight: 700;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+button:hover {
+  box-shadow: 1px 4px 5px black;
+}
